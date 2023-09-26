@@ -1,0 +1,69 @@
+/*-Database name: lmdatabase-*/
+
+/*-admin-*/
+CREATE TABLE admin (
+  ID int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  Name varchar(50) NOT NULL,
+  Surname varchar(50) NOT NULL,
+  Password varchar(30) NOT NULL,
+  Tel_no int(30) NOT NULL
+);
+
+
+/*-user-*/
+CREATE TABLE `user`(
+  ID int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  Name varchar(50) NOT NULL,
+  Surname varchar(50),
+  Email varchar(100) NOT NULL,
+  Password varchar(70) NOT NULL
+);
+
+/*-feedbacks-*/
+CREATE TABLE feedbacks(
+  ID int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  Title varchar(100),
+  Content varchar(400) NOT NULL,
+  user_ID int(11) NOT NULL,
+  FOREIGN KEY (user_ID) REFERENCES user(ID) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+/*-answers-*/
+CREATE TABLE answers(
+  ID int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  title varchar(100),
+  content varchar(400),
+  admin_ID int(11) NOT NULL,
+  feedback_ID int(11),
+  FOREIGN KEY (admin_ID) REFERENCES admin(ID) ON UPDATE CASCADE,
+FOREIGN KEY (feedback_ID) REFERENCES feedbacks(ID) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+/*-sources-*/
+CREATE TABLE sources(
+  ID int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  name varchar(100),
+  link varchar(400),
+  admin_ID int(11) NOT NULL,
+  FOREIGN KEY (admin_ID) REFERENCES admin(ID) ON UPDATE CASCADE
+);
+
+/*-materials-*/
+CREATE TABLE materials(
+  ID int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  Title varchar(100) NOT NULL,
+  Description varchar(400) NOT NULL,
+  link varchar(300),
+  Reference varchar(300),
+  Admin_ID int(11),
+  image varchar(50),
+  Source_ID int(11),
+  FOREIGN KEY (Admin_ID) REFERENCES admin(ID) ON UPDATE CASCADE,
+  FOREIGN KEY (Source_ID) REFERENCES sources(ID) ON UPDATE CASCADE
+);
+
+/*-Adding a Test Account-*/
+INSERT INTO admin (Name, Surname, Password, Tel_no) VALUES('John','Doe','Password', '123456789');
+
+/*-Adding a Test Source-*/
+INSERT INTO sources (name, admin_ID) VALUES("Test", "1");
