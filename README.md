@@ -40,5 +40,3 @@ Now, the database is set. All you need to do afterwards is populate it through t
 - Go back to [feedback page](http://localhost/Language%20and%20Studies/Feedbacks.php), click on the feedback you made and respond to it.
 
 **That's it, you've known how to do the job.**
-
-If you have any question or concern so far, [contact me](kikoaman@gmail.com).
