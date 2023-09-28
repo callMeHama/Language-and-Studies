@@ -26,17 +26,17 @@ Feel free to contribute by fixing such issues, some of them are theoretically ea
 
 <h2>Running and Using the System</h2>
 
-To run the project, a setup is needed. First, you should download XAMPP from [HERE](https://www.apachefriends.org/). Afterwards, copy the project files provided in htdocs, which is in your xampp directory (expectedly c:/xampp/htdocs). open the xampp control panel, which should be already installed, and activate Apache and MySQL. Open [phpMyAdmin](Localhost:/phpmyadmin/index.php), and click on the button 'New' in the top left corner of the screen. You will find a 'Database name' textbox, in which you should write lmdatabase and click 'Create'. After clicking on the 'lmdatabase' newly created below 'information_schema', click the 'SQL' tab shown in tabs above. Copy the SQLi commands provided in the [SQL file](https://github.com/callMeHama/Language-and-Studies/sql.txt) and paste it to the text field, then click Ctrl+Enter.
+To run the project, a setup is needed. First, you should download XAMPP from [HERE](https://www.apachefriends.org/). Afterwards, copy the project files provided in htdocs, which is in your xampp directory (expectedly c:/xampp/htdocs). open the xampp control panel, which should be already installed, and activate Apache and MySQL. Open [phpMyAdmin](Localhost:/phpmyadmin/index.php), and click on the button 'New' in the top left corner of the screen. You will find a 'Database name' textbox, in which you should write lmdatabase and click 'Create'. After clicking on the 'lmdatabase' newly created below 'information_schema', click the 'SQL' tab shown in tabs above. Copy the SQLi commands provided in the [SQL file](sql.txt) and paste it to the text field, then click Ctrl+Enter.
 
-Now, the database is set. All you need to do afterwards is populate it through the system. Open the [locally hosted project](https://github.com/callMeHama/Language-and-Studies/Main%20Page.php) and try adding some things. recommendedly do the following:  
+Now, the database is set. All you need to do afterwards is populate it through the system. Open the [locally hosted project](Main%20Page.php) and try adding some things. recommendedly do the following:  
 - Create a user account and login with it (Login/Signup).  
-- Create a feedback while logged in [Categories](https://github.com/callMeHama/Language-and-Studies/Categories.php).  
+- Create a feedback while logged in [Categories](Categories.php).  
 - Go to main page and update your profile picture.  
-- Login as an [Admin](https://github.com/callMeHama/Language-and-Studies/Admin%20Login.php) with Name: John, Surname: Doe, Password: Password, SKey: 123(This account is inserted for experiment. No account insertion service is made in the client platform for integrity reasons).  
-- Try [adding a Resource, then a source](https://github.com/callMeHama/Language-and-Studies/AddResource.php)  
-- Go back then to [Categories](https://github.com/callMeHama/Language-and-Studies/Categories.php), check the resource, and click on it.  
+- Login as an [Admin](Admin%20Login.php) with Name: John, Surname: Doe, Password: Password, SKey: 123(This account is inserted for experiment. No account insertion service is made in the client platform for integrity reasons).  
+- Try [adding a Resource, then a source](AddResource.php)  
+- Go back then to [Categories](Categories.php), check the resource, and click on it.  
 - Try updating the resource by clicking ('Edit') and changing the content.  
 - Try deleting the resource by clicking ('Delete').  
-- Go back to [feedback page](https://github.com/callMeHama/Language-and-Studies/Feedbacks.php), click on the feedback you made and respond to it.
+- Go back to [feedback page](Feedbacks.php), click on the feedback you made and respond to it.
 
 **That's it, you've known how to do the job.**
