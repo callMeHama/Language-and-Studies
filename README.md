@@ -2,7 +2,7 @@
 
 <h2>Overview</h2>
 
-How does making a project that connects people to materials on human language sound? It surely sounded nice to me, since Language is the greatest mean to knowledge. Now, how does Language relate to Studies? For example, how may a difference in language change our perceptions and, therefore, our conclusions? Why do we express things such as world games? These are questions that came to mind for a while, and they surely seem to be persistent and never given a complete answer. Irrespective of the controversies around such linguistic issue, since it makes a connection between methodological and philosophical topics, this project is an attempt to give access to a variety of topics relating to the issue. If you're interested, you're most welcome. Any contributions or changes to the site are welcome- as long as they are safe and legal, of course. The project additionally provides other features, such as feedback and response insertions from an end-user account and Admin account.
+How does making a project that connects people to materials on human language sound? It surely sounded nice to me, since Language is the greatest mean to knowledge. Now, how does Language relate to Studies? For example, how may a difference in language change our perceptions and, therefore, our conclusions? These are questions that came to mind for a while, and they surely seem to be persistent and never given a complete answer. Irrespective of the controversies around such linguistic issue, since it makes a connection between technical and philosophical topics, this project is an attempt to give access to a variety of topics relating to the issue. If you're interested, you're most welcome. Any contributions or changes to the site are welcome- as long as they are safe and legal, of course. The project additionally provides other features, such as feedback and response insertions from an end-user account and Admin account.
 
 The website uses HTML, CSS, JavaScript, PHP and SQL:  
 - HTML and CSS for adding and formatting elements,  
@@ -11,14 +11,14 @@ The website uses HTML, CSS, JavaScript, PHP and SQL:
 - and SQL for creating a relational database.
 
 The tools and editors used in developing the system are:  
-- Visual Studio (Optional),  
+- Visual Studio Code (Optional),  
 - Xampp with phpMyAdmin and Apache activated.
 
-There are some issues in the system, however, one of them is in image display as well as some code inconsistencies. For example, there is the display of database elements. Articles and materials are displayed using a for loop, that handles errors relating to inexistence of matching materials. Such structure may be inefficient in the long run, because with an auto incremented ID, the more you delete from feedback the more unnecessary requests from database are made and handled. Other displays however include a while loop, which is less complex and seemingly does not make unnecessary requests the way a for loop does.
+There are some issues in the system, however, one of them is in image display as well as some code inconsistencies. For example, there is the display of database elements. Articles and materials are displayed using a for loop, that handles errors relating to inexistence of matching materials. Such structure may be inefficient in the long run, because with an auto incremented ID, the more you delete from feedback the more unnecessary requests from database are made and handled. Other displays, however, include a while loop, which is less complex and seemingly does not make unnecessary requests the way a for loop does. This may be fixed soon..
 
 Other problems include:  
 - Updated profile picture display requiring refresh of the page,  
-- Disturbing refresh on submission, which is the default state of PHP,  
+- Disturbing refresh on submission, which is default with PHP,  
 - Materials inserted do not include their post images.  
 - No filtering for resources depending on the source they are attributed to
 
@@ -34,9 +34,9 @@ Now, the database is set. All you need to do afterwards is populate it through t
 - Go to main page and update your profile picture.  
 - Login as an [Admin](Admin%20Login.php) with Name: John, Surname: Doe, Password: Password, SKey: 123(This account is inserted for experiment. No account insertion service is made in the client platform for integrity reasons).  
 - Try [adding a Resource, then a source](AddResource.php)  
-- Go back then to [Categories](Categories.php), check the resource, and click on it.  
+- Go back then to [Categories](Categories.php), check the resource, and click on it.
 - Try updating the resource by clicking ('Edit') and changing the content.  
-- Try deleting the resource by clicking ('Delete').  
+- Try deleting the resource by clicking ('Delete').
 - Go back to [feedback page](Feedbacks.php), click on the feedback you made and respond to it.
 
 **That's it, you've known how to do the job.**
